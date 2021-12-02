@@ -19,6 +19,11 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: TerraformInstaller
+    displayName: install terraform
+    inputs:
+        terraformVersion: latest
+
 - task: TerraformCLI@0
   inputs:
     command: 'init'
