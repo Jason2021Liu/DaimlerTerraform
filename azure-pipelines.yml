@@ -29,15 +29,21 @@ steps:
   inputs:
     command: 'init'
     allowTelemetryCollection: true
+
 - task: TerraformCLI@0
+  displayName: 'terraform validate'
   inputs:
     command: 'validate'
     allowTelemetryCollection: true
+
 - task: TerraformCLI@0
+  displayName: 'terraform plan'
   inputs:
     command: 'plan'
     allowTelemetryCollection: true
+
 - task: TerraformCLI@0
+  displayName: 'terraform apply'
   inputs:
     command: 'apply'
     allowTelemetryCollection: true
