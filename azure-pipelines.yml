@@ -23,7 +23,7 @@ steps:
 #    displayName: install terraform
 #    inputs:
 #        terraformVersion: latest
-- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0
+- task: TerraformInstaller@0
   displayName: 'Install Terraform'
 
 - task: TerraformCLI@0
