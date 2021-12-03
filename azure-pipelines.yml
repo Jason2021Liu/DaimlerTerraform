@@ -38,7 +38,7 @@ steps:
   displayName: 'terraform plan'
   inputs:
     command: 'plan'
-    environmentServiceName: 'jasonPersonal'
+    environmentServiceName: 'JasonPersonal'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
