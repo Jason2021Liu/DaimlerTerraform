@@ -45,4 +45,5 @@ steps:
   displayName: 'terraform apply'
   inputs:
     command: 'apply'
+    environmentServiceName: 'JasonPersonal'
     allowTelemetryCollection: true
