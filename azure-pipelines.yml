@@ -19,13 +19,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-variables:
-  # There must be an Azure Service Connection with that name defined in your Azure DevOps settings. See https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops
-  serviceConnection: 'jasonPersonal'
-  #azureLocation: 'eastus'
-  # Terraform settings
-  #terraformWorkingDirectory: '$(System.DefaultWorkingDirectory)/samples/integration-testing/src'
-
 - task: TerraformInstaller@0
   displayName: 'Install Terraform'
 
@@ -45,14 +38,11 @@ variables:
   displayName: 'terraform plan'
   inputs:
     command: 'plan'
-    environmentServiceName: $(serviceConnection)
-#commandOptions: -var location=$(azureLocation)
+    environmentServiceName: 'jasonPersonal'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: 'terraform apply'
   inputs:
     command: 'apply'
-#environmentServiceName: $(serviceConnection)
-#commandOptions: -var location=$(azureLocation)
     allowTelemetryCollection: true
