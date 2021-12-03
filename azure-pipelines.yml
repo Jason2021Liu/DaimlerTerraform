@@ -35,5 +35,9 @@ steps:
     allowTelemetryCollection: true
 - task: TerraformCLI@0
   inputs:
+    command: 'plan'
+    allowTelemetryCollection: true
+- task: TerraformCLI@0
+  inputs:
     command: 'apply'
     allowTelemetryCollection: true
