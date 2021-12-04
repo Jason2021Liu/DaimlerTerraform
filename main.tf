@@ -15,7 +15,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name      = "daimler-devops-dev"
-  location  = var.resource_group_location
+  name = "cli-test-dev"
+  location = "eastus"
 }
 
