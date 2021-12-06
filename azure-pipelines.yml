@@ -38,12 +38,24 @@ steps:
   displayName: 'terraform validate'
   inputs:
     command: 'validate'
+    backendType: 'azurerm'
+    backendServiceArm: 'JasonPersonal'
+    backendAzureRmResourceGroupName: 'daimlerdev'
+    backendAzureRmStorageAccountName: 'daimlerst'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'dev.terraform.tfstate'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: 'terraform plan'
   inputs:
     command: 'plan'
+    backendType: 'azurerm'
+    backendServiceArm: 'JasonPersonal'
+    backendAzureRmResourceGroupName: 'daimlerdev'
+    backendAzureRmStorageAccountName: 'daimlerst'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'dev.terraform.tfstate'
     environmentServiceName: 'JasonPersonal'
     allowTelemetryCollection: true
 
@@ -51,5 +63,10 @@ steps:
   displayName: 'terraform apply'
   inputs:
     command: 'apply'
-    environmentServiceName: 'JasonPersonal'
+    backendType: 'azurerm'
+    backendServiceArm: 'JasonPersonal'
+    backendAzureRmResourceGroupName: 'daimlerdev'
+    backendAzureRmStorageAccountName: 'daimlerst'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'dev.terraform.tfstate'
     allowTelemetryCollection: true
