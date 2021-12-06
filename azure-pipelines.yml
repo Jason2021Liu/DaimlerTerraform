@@ -26,13 +26,13 @@ steps:
   displayName: 'terraform init'
   inputs:
     command: init
-    #backendType: 'azurerm'
-    #backendServiceArm: 'JasonPersonal'
-    #backendAzureRmResourceGroupName: 'tfstate'
-    #backendAzureRmStorageAccountName: 'tfstate7000'
-    #backendAzureRmContainerName: 'tfstate'
-    #backendAzureRmKey: 'dev.terraform.tfstate'
-    #allowTelemetryCollection: true
+    backendType: 'azurerm'
+    backendServiceArm: 'JasonPersonal'
+    backendAzureRmResourceGroupName: 'daimlerdev'
+    backendAzureRmStorageAccountName: 'daimlerst'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'dev.terraform.tfstate'
+    allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: 'terraform validate'

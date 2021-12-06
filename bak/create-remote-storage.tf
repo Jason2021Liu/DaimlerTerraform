@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "azurerm" {
-        storage_account_name = "daimlerstorage" 
+        storage_account_name = "daimlerst" 
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
         resource_group_name  = "daimlerdev" 
