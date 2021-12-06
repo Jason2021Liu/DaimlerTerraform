@@ -27,11 +27,11 @@ steps:
   inputs:
     command: init
     backendType: azurerm
-    #backendServiceArm: insights_cn_dev_st_it
-    #backendAzureRmResourceGroupName: tfstate
-    #backendAzureRmStorageAccountName: tfstate7000
-    #backendAzureRmContainerName: tfstate
-    #backendAzureRmKey: 'terraform.tfstate'
+    backendServiceArm: 'JasonPersonal'
+    backendAzureRmResourceGroupName: 'tfstate'
+    backendAzureRmStorageAccountName: 'tfstate7000'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'terraform.tfstate'
     #commandOptions: -backend-config="storage_account_name=tfstate7000" -backend-config="container_name=tfstate" -backend-config="access_key=kz46Dxf5QrTfF/7kR2EDHD5jl4XiW1mWeit0KYXgN1pw8A4v8ox0mE1LFPcuMuUzGBCthwDI65VsNZdtoYlLPA==" -backend-config="key=codelab.microsoft.tfstate"
     #allowTelemetryCollection: true
 
