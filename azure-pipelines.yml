@@ -26,7 +26,7 @@ steps:
   displayName: 'terraform init'
   inputs:
     command: init
-    backendType: azurerm
+    backendType: 'azurerm'
     backendServiceArm: 'JasonPersonal'
     backendAzureRmResourceGroupName: 'tfstate'
     backendAzureRmStorageAccountName: 'tfstate7000'
