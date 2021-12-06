@@ -5,6 +5,14 @@ terraform {
       version = "=2.46.0"
     }
   }
+
+  backend "azurerm" {
+        storage_account_name = "daimlerstorage" 
+        container_name       = "tfstate"
+        key                  = "terraform.tfstate"
+        resource_group_name  = "daimlerdev" 
+      }
+      
 }
 
 provider "azurerm" {
