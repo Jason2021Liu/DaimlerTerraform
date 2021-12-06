@@ -38,7 +38,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
         admin_username = "ubuntu"
 
         ssh_key {
-            key_data = file(var.ssh_public_key)
+            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDmK/thfF1HjePbsHWtMmmHGKn2LG6MJqYD0BAhNRu4oXiFMUhL65I5uSVj9C1g2ivF4BZKMpZ6hYMI43Of6xlGqWdXD+teT/oST5m1k3T31iziSHdf2wElPRDGVBUUtAONHoEa/P4n9cmvbxOPeLwYnFah1EswR1dwWgTLTqUpVYkSL5EW18BVXij3CVsTV5Q4atWUORrp6RnDiuL+WXypGl34uREtAaBK0l03fVupXBzHvOfa5vYMMGQFtGGWo95ZUG4Nuvwd17zsBCz6Y9t7A2TUtE+pDivVHO5zguvu3HWu/Ians+JP5AU/2R+AMjeG17piiEyvScEt82hjYnZsQeiqnYLzj3JKrMoOhNG7tuLSChcaroE8VY19nUAR2Yn5HbEvu1KSvEHICOo86h2QIP2rZoVB3PhcR8NvzbRQxWI6yNEd2IwHBnS17oBgtpVUD3xQOVu/6dTZr0eETgjlz2odFyk+oWsVFwsdVMWSmzdi+x7YnSBi88tvKFAaswf6sJH2WIXKJsZ6zDin7tZQw0pxRwg50bUu5Syp62eVvKo2u0rSjNsN4/MJOSPYBYqnpaewXFl33JY5nsUNn7cAYEwB5z79ATVOZ2HK9MzmMsnbLg4YX4Wn762unvl3eglWTQbTzQo12iB9GthIULG6IEXoo75DCVF1bFnkblUxow== azureuser@cc-d74f79c6-dcd88976b-hrjb6"
         }
     }
 
