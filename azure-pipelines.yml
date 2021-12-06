@@ -26,6 +26,7 @@ steps:
   displayName: 'terraform init'
   inputs:
     command: init
+    environmentServiceName: 'JasonPersonal'
     backendType: 'azurerm'
     backendServiceArm: 'JasonPersonal'
     backendAzureRmResourceGroupName: 'daimlerdev'
@@ -38,13 +39,19 @@ steps:
   displayName: 'terraform validate'
   inputs:
     command: 'validate'
+    environmentServiceName: 'JasonPersonal'
+    allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: 'terraform plan'
   inputs:
     command: 'plan'
+    environmentServiceName: 'JasonPersonal'
+    allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: 'terraform apply'
   inputs:
     command: 'apply'
+    environmentServiceName: 'JasonPersonal'
+    allowTelemetryCollection: true
