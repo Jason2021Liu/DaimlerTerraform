@@ -30,10 +30,8 @@ steps:
     backendServiceArm: 'JasonPersonal'
     backendAzureRmResourceGroupName: 'tfstate'
     backendAzureRmStorageAccountName: 'tfstate7000'
-    backendAccessKey: 'Dz+qiBLaFSUiYUM87kQ1sFKCaF0O8AbPkYODlVIlxRI7xcSoEVIYJ4j61ifLdgbn6TozLKlmcgVG/uimXnndxQ=='
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'dev.terraform.tfstate'
-    #commandOptions: -backend-config="storage_account_name=tfstate7000" -backend-config="container_name=tfstate" -backend-config="access_key=kz46Dxf5QrTfF/7kR2EDHD5jl4XiW1mWeit0KYXgN1pw8A4v8ox0mE1LFPcuMuUzGBCthwDI65VsNZdtoYlLPA==" -backend-config="key=codelab.microsoft.tfstate"
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
